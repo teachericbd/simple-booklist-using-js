@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Booklist Project</title>
+    <link rel="stylesheet" href="./assets/css/skeleton.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Book</h1>
+        <div id="flas-msg"></div>
+        <form id="book_frm">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="u-full-width" id="title">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" class="u-full-width" id="author">
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN</label>
+                <input type="number" class="u-full-width" id="isbn">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn u-full-width">
+            </div>
+        </form>
+        <hr>
+        <table class="table u-full-width">
+            <thead>
+                <tr>
+                <th>Title</th>
+                <th>Author Name</th>
+                <th>ISBN</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody class="show-book-list">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
